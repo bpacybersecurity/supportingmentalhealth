@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Online Counseling Scheduler — Mental Health Support</title>
+  <style>
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: #f1f5f9;
+      color: #0f172a;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+    }
+    h1 {
+      color: #1e3a8a;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e6e9ef;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    a.back {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>Schedule a Counseling Session</h1>
+    <p>Fill out the form below to request an appointment with one of our counselors. You’ll receive a confirmation by email once your request is reviewed.</p>
+
+    <form action="https://formspree.io/f/mkgkgwkq" method="POST">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="date">Preferred Date</label>
+      <input id="date" name="date" type="date" required>
+
+      <label for="time">Preferred Time</label>
+      <select id="time" name="time" required>
+        <option value="">Select a time slot</option>
+        <option>9:00 AM - 10:00 AM</option>
+        <option>10:00 AM - 11:00 AM</option>
+        <option>1:00 PM - 2:00 PM</option>
+        <option>2:00 PM - 3:00 PM</option>
+        <option>3:00 PM - 4:00 PM</option>
+      </select>
+
+      <label for="reason">Reason for Visit (optional)</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe what you’d like to talk about..."></textarea>
+
+      
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+  <footer>
+  <p>&copy; 2025 BPA Website Design Team | SCCTC Cyber Security. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
