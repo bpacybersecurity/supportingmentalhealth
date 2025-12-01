@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Online Counseling Scheduler — Mental Health Support</title>
-   <link rel="icon" href="favicon.png" type="image/png">
   <style>
     body {
       font-family: Inter, system-ui, sans-serif;
@@ -63,10 +62,48 @@
       text-decoration: underline;
     }
   </style>
+  <<style>
+    ::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#0f172a;background:#f1f5f9}
+    .container{max: width 1500px;margin:24px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#2563eb,#22c55e);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:14px;text-decoration:none;color:#0f172a}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;background:white;padding:28px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .hero h1{font-size:2rem;margin:0;color:#1e3a8a}
+    .hero p{margin:6px 0 0;color:#334155}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:#2563eb;color:white;text-decoration:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 4px 14px rgba(2,6,23,0.04)}
+    .card h3{margin:0 0 8px;color:#2563eb}
+    footer{margin-top:20px;text-align:center;color:#64748b;font-size:0.95rem}
+    label{display:block;font-size:0.9rem;margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:0.95rem}
+    button{padding:10px 14px;border-radius:8px;border:0;background:#22c55e;color:white;cursor:pointer}
+    @media(min-width:700px){.hero{grid-template-columns:1fr 360px;align-items:center}}
+  </style>
+</head>
+</html>
+<body>
+   <div class="container">
+    <header>
+      <div class="brand">
+        <div>
+          <div class="title">Mental Health Support</div>
+          <div style="font-size:0.85rem;color:#64748b">Website Design Team Project</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="bpa.html">More Info</a>
+        <a href="scheduler.html" class="active">Counseling Scheduler</a>
+      </nav>
+    </header>
 </head>
 <body>
   <div class="container">
-    <a class="back" href="index.html">← Back to Home</a>
     <h1>Schedule a Counseling Session</h1>
     <p>Fill out the form below to request an appointment with one of our counselors. You’ll receive a confirmation by email once your request is reviewed.</p>
 
